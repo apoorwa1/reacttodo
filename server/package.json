@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "engines": {
+    "node": "16.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node  dotenv/config ./bin/www.js",
+    "dev": "nodemon -r dotenv/config ./bin/www.js",
+    "dbcreatetodotable": "node -r dotenv/config ./db/scripts/todos/createTodoTable.js",
+    "dbpopulatetodotable": "node -r dotenv/config ./db/scripts/todos/populateTodoTable.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3"
+  }
+}
