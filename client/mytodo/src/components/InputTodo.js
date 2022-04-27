@@ -24,7 +24,7 @@ const InputTodo = () => {
   }
   return (
     <div>
-      <h1 className="text-center mt-5">InputTodo for perntodo app</h1>
+      <h1 className="text-center mt-5">My Todo App</h1>
       <form onSubmit={onSubmitForm}>
         <input type="text" value={description} onChange={onChange}></input>
         <button className="btn btn-danger">Add</button>
