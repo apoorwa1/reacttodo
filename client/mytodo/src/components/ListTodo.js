@@ -37,7 +37,7 @@ const ListTodo = () => {
 
   return (
     <>
-      <h1>List of Todos</h1>
+      <h1>Todos List</h1>
       <table className="table mt-5 text-center">
         <thead>
           <tr>
